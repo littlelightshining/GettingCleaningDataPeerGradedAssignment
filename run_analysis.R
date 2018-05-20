@@ -44,4 +44,3 @@ data <- cbind(subject, Y, X)
 groupedBy_subject_activity <- data %>% group_by(subject, activity) %>% summarise_each(funs(mean))
 
 write.table(groupedBy_subject_activity, "grouped_data.txt", row.name=FALSE)
-
