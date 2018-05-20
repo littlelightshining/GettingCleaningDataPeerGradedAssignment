@@ -3,6 +3,7 @@ setwd("C:/Users/carla/OneDrive/Coursera/CleaningData/Week4/Project")
 UnZip <- unzip("data.zip")
 setwd("C:/Users/carla/OneDrive/Coursera/CleaningData/Week4/Project//UCI HAR Dataset")
 
+# Reading raw data
 
 x_train <- read.table("train/X_train.txt")
 y_train <- read.table("train/y_train.txt")
@@ -12,13 +13,13 @@ x_test <- read.table("test/X_test.txt")
 y_test <- read.table("test/y_test.txt")
 subject_test <- read.table("test/subject_test.txt")
 
+features <- read.table("features.txt")
+
 # Merge the training and the test sets in one dataset
 
 X <- rbind(x_train, x_test)
 Y <- rbind(y_train, y_test)
 subject <- rbind(subject_train, subject_test)
-
-features <- read.table("features.txt")
 
 # Extracts from 561 features the mean and standard deviation 
 
