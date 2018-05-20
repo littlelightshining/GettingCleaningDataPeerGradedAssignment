@@ -1,4 +1,7 @@
 library(dplyr)
+
+# Unzipping raw data
+
 setwd("C:/Users/carla/OneDrive/Coursera/CleaningData/Week4/Project")
 UnZip <- unzip("data.zip")
 setwd("C:/Users/carla/OneDrive/Coursera/CleaningData/Week4/Project//UCI HAR Dataset")
